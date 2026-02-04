@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "511514525383",
+    "project_id": "matheduapp",
+    "storage_bucket": "matheduapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:511514525383:android:501733a745b5b1e2edc8e2",
+        "android_client_info": {
+          "package_name": "com.example.matheduapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPBrY0U2JO-C0vP6AXoABtvskH7t7eKko"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

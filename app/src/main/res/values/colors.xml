@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Básicos -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#808080</color>
+    <color name="light_gray">#E6E6E6</color>
+
+    <!-- Colores de logros -->
+    <color name="gold">#E6B800</color>
+    <color name="purple">#9C27B0</color>
+    <color name="orange">#FF9800</color>
+    <color name="blue">#2196F3</color>
+    <color name="green">#4CAF50</color>
+    <color name="red">#F44336</color>
+    <color name="verde">#008B86</color>
+    <color name="teal_700">#018786</color>
+
+
+    <!-- Colores adicionales app -->
+    <color name="primary">#2575FC</color>
+    <color name="primary_light">#6A11CB</color>
+    <color name="accent">#F39C12</color>
+    <color name="background_light">#F8FAFF</color>
+    <color name="text_primary">#222222</color>
+    <color name="text_secondary">#666666</color>
+    <color name="disabled">#BDBDBD</color>
+</resources>
+

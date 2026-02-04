@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">MathEduApp</string>
+
+    <string name="intro_math">
+        DESCUBRE UN MUNDO DIVERTIDO DE MATEMÁTICAS, DONDE CADA NÚMERO SE CONVIERTE EN UNA AVENTURA Y CADA RETO TE AYUDA A CRECER, APRENDER Y JUGAR COMO UN CAMPEÓN.
+    </string>
+
+    <string-array name="roles_array_alt">
+        <item>Item 1</item>  <item>Estudiante</item>
+        <item>Profesor</item>
+    </string-array>
+
+    <string-array name="dificultades">
+        <item>Fácil</item>
+        <item>Medio</item>
+        <item>Difícil</item>
+    </string-array>
+
+    <!-- 🔹 Array para grados escolares -->
+    <string-array name="grados_array">
+        <item>Seleccionar grado</item>
+        <item>1° de Primaria</item>
+        <item>2° de Primaria</item>
+        <item>3° de Primaria</item>
+        <item>4° de Primaria</item>
+        <item>5° de Primaria</item>
+        <item>6° de Primaria</item>
+        <item>1° de Secundaria</item>
+        <item>2° de Secundaria</item>
+        <item>3° de Secundaria</item>
+        <item>4° de Secundaria</item>
+        <item>5° de Secundaria</item>
+    </string-array>
+</resources>

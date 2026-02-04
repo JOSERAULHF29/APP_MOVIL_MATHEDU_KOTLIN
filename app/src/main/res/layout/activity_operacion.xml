@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootOperacion"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F8FAFF"
+    android:gravity="center_horizontal"
+    android:paddingTop="8dp">
+
+    <!-- Contenido principal -->
+    <LinearLayout
+        android:id="@+id/contentOperacion"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/tvTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Juego Matemático 🧠"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#1C1C1E"
+            android:layout_marginBottom="16dp" />
+
+        <Spinner
+            android:id="@+id/spnDificultad"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/dificultades"
+            android:layout_marginBottom="18dp"
+            android:spinnerMode="dropdown" />
+
+        <TextView
+            android:id="@+id/tvOperacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8 + 5 = ?"
+            android:textColor="#2A2A2A"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilRespuesta"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:hint="Tu respuesta"
+            app:boxBackgroundMode="outline"
+            android:layout_marginBottom="12dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etRespuesta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:inputType="number"
+                android:textSize="20sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnVerificar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verificar ✅"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            app:cornerRadius="12dp"
+            app:backgroundTint="@color/primary" />
+
+        <TextView
+            android:id="@+id/tvResultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:textColor="#333333" />
+
+        <TextView
+            android:id="@+id/tvPuntuacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Puntuación: 0"
+            android:textSize="16sp"
+            android:textColor="#666666"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+
+    <!-- Vista de confeti -->
+    <nl.dionsegijn.konfetti.xml.KonfettiView
+        android:id="@+id/konfettiView"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:visibility="visible" />
+
+</LinearLayout>
+
+
+
+
+
+

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="32dp">
+
+        <!-- Logo -->
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/circle_bg"
+            android:backgroundTint="#EEF1FF"
+            android:padding="20dp"
+            app:srcCompat="@drawable/ic_school"
+            app:tint="#007AFF"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Título -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Crear cuenta"
+            android:textSize="26sp"
+            android:textColor="#1C1C1E"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Completa tus datos para continuar"
+            android:textColor="#8E8E93"
+            android:textSize="14sp"
+            android:layout_marginBottom="36dp" />
+
+        <!-- Campo Nombre -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/edittext_ios"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                app:srcCompat="@drawable/ic_person"
+                app:tint="#9CA3AF"
+                android:layout_marginEnd="8dp" />
+
+            <EditText
+                android:id="@+id/etNombre"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Nombres completos"
+                android:background="@null"
+                android:textColor="#1C1C1E"
+                android:textColorHint="#9CA3AF"
+                android:padding="0dp"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Campo Edad -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/edittext_ios"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                app:srcCompat="@drawable/ic_cake"
+                app:tint="#9CA3AF"
+                android:layout_marginEnd="8dp" />
+
+            <EditText
+                android:id="@+id/etEdad"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Edad"
+                android:background="@null"
+                android:inputType="number"
+                android:textColor="#1C1C1E"
+                android:textColorHint="#9CA3AF"
+                android:padding="0dp"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Spinner Grado -->
+        <Spinner
+            android:id="@+id/spinnerGrado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/spinner_ios"
+            android:entries="@array/grados_array"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Campo Email -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/edittext_ios"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                app:srcCompat="@drawable/ic_email"
+                app:tint="#9CA3AF"
+                android:layout_marginEnd="8dp" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Correo electrónico"
+                android:background="@null"
+                android:inputType="textEmailAddress"
+                android:textColor="#1C1C1E"
+                android:textColorHint="#9CA3AF"
+                android:padding="0dp"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Campo Contraseña -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/edittext_ios"
+            android:padding="12dp"
+            android:layout_marginBottom="24dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                app:srcCompat="@drawable/ic_lock"
+                app:tint="#9CA3AF"
+                android:layout_marginEnd="8dp" />
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Contraseña"
+                android:background="@null"
+                android:inputType="textPassword"
+                android:textColor="#1C1C1E"
+                android:textColorHint="#9CA3AF"
+                android:padding="0dp"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Botón de Crear cuenta -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Crear cuenta"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:background="@drawable/btn_ios_primary"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Ya tienes cuenta -->
+        <TextView
+            android:id="@+id/tvGoToLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿Ya tienes cuenta? Inicia sesión"
+            android:textColor="#007AFF"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>
+
+
